@@ -1,0 +1,18 @@
+server:
+  port: 8090
+
+tcp:
+  port: 5000
+
+spring:
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://localhost:1433;databaseName=TestDB;encrypt=false;
+    username: admin
+    password: admin
+
+  jpa:
+    database: sql_server
+    database-platform: org.hibernate.dialect.SQLServerDialect
+    hibernate:
+      ddl-auto: create

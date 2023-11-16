@@ -1,0 +1,5 @@
+server:
+  port: 8080
+
+tcp:
+  port: 5001
